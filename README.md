@@ -2,7 +2,7 @@
  
 ## opendata
 
-- [toyama-opendata_eatery.csv](data/toyama-opendata_eatery.csv) by [食品製造・販売、飲食店、喫茶店一覧（2024年7月1日現在） | 食品製造・販売、飲食店、喫茶店一覧 | データカタログ | 富山県オープンデータポータルサイト](https://opendata.pref.toyama.jp/dataset/syokuhin/resource/984efe30-d471-41fe-a189-5a346e8ce280)
+- [toyama-opendata_eatery.csv](data/toyama-opendata_eatery.csv) from [食品製造・販売、飲食店、喫茶店一覧（2024年7月1日現在） | 食品製造・販売、飲食店、喫茶店一覧 | データカタログ | 富山県オープンデータポータルサイト](https://opendata.pref.toyama.jp/dataset/syokuhin/resource/984efe30-d471-41fe-a189-5a346e8ce280)
 
 ## query class
 
