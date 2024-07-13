@@ -80,7 +80,7 @@ const queryList = (s, v) => {
     return `${s}に${v}を含む飲食店はありません`;
   } else if (list.length == 1) {
     const d = list[0];
-    return `${s}に${v}を含む飲食店は1件、${d.施設市町村}${d.施設住所１}に「${d.施設屋号}」があります`;
+    return `${d.施設市町村}${d.施設住所１}に「${d.施設屋号}」があります`;
   }
   const ss = [`${s}に${v}を含む飲食店が${list.length}件あります`];
   for (let i = 0; i < Math.min(list.length, 10); i++) {
