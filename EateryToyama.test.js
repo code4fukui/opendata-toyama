@@ -23,4 +23,5 @@ Deno.test("tel", async () => {
     "博多屋台ラーメン　なかちゃんのアクセスは、魚津市本新町691");
   t.assertEquals(await eatery.query("山久ラーメンのアクセスって知ってる？"), "山久ラーメンのアクセスは、魚津市上村木1-17-8です");
   t.assertEquals(await eatery.query("山久ラーメンの業種は？"), "山久ラーメンの業種は、飲食店営業です");
+  t.assertEquals(await eatery.query("大黒の電話番号"), "大黒家の電話番号は、0763-33-1598です");
 });

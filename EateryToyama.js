@@ -53,7 +53,7 @@ const queryName = (s, v) => {
   const name = getName(v);
   if (!name) return null;
   const list = data.filter(i => {
-    return containsObject(i, s);
+    return containsObject(i, s) && i[name];
   });
   if (list.length == 0) {
     //return `${s}がみつかりません`;
