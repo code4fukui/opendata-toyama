@@ -60,12 +60,12 @@ const queryName = (s, v) => {
     return null;
   } else if (list.length == 1) {
     const d = list[0];
-    return `${s}の${v}は、${d[name]}です`;
+    return `${d.施設屋号}の${v}は、${d[name]}です`;
   }
   const ss = [`${s}は${list.length}件あります`];
   for (let i = 0; i < Math.min(list.length, 10); i++) {
     const d = list[i];
-    ss.push(`${s}の${v}は、${d[name]}`);
+    ss.push(`${d.施設屋号}の${v}は、${d[name]}`);
   }
   if (list.length > 10) {
     ss.push(`他、${list.length - 10}件あります`)

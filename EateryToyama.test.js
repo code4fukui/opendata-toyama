@@ -17,6 +17,10 @@ Deno.test("simple", async () => {
 Deno.test("tel", async () => {
   const eatery = new EateryToyama();
   t.assertEquals(await eatery.query("山久ラーメンの電話番号？"), "山久ラーメンの電話番号は、0765-22-8213です");
+  t.assertEquals(await eatery.query("博多屋台の電話番号？"), "博多屋台ラーメン　なかちゃんの電話番号は、0765-32-4669です");
+  t.assertEquals(await eatery.query("博多のアクセス知ってる？"), "博多は2件あります\n" + 
+    "博多らーめん　山桜のアクセスは、高岡市新成町1-90\n" +
+    "博多屋台ラーメン　なかちゃんのアクセスは、魚津市本新町691");
   t.assertEquals(await eatery.query("山久ラーメンのアクセスって知ってる？"), "山久ラーメンのアクセスは、魚津市上村木1-17-8です");
   t.assertEquals(await eatery.query("山久ラーメンの業種は？"), "山久ラーメンの業種は、飲食店営業です");
 });
