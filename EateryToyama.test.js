@@ -10,7 +10,8 @@ Deno.test("simple", async () => {
      "4. 魚津市本新町691の「博多屋台ラーメン　なかちゃん」\n" +
      "5. 魚津市上村木２－１５－１７の「ラーメンむてっぽう　魚津店」");
   t.assertEquals(await eatery.query("魚津市の博多は？"), "魚津市本新町691に「博多屋台ラーメン　なかちゃん」があります");
-  t.assertEquals(await eatery.query("射水市の鍋"), "射水市に鍋を含む飲食店はありません");
+  //t.assertEquals(await eatery.query("射水市の鍋"), "射水市に鍋を含む飲食店はありません");
+  t.assertEquals(await eatery.query("射水市の鍋"), null);
   t.assertEquals(await eatery.query("魚津市の鍋"), "魚津市駅前新町5-30サンプラザ２Fに「もつ鍋・焼肉　円笑」があります");
 });
 Deno.test("tel", async () => {

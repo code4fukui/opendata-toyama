@@ -56,7 +56,8 @@ const queryName = (s, v) => {
     return containsObject(i, s);
   });
   if (list.length == 0) {
-    return `${s}がみつかりません`;
+    //return `${s}がみつかりません`;
+    return null;
   } else if (list.length == 1) {
     const d = list[0];
     return `${s}の${v}は、${d[name]}です`;
@@ -77,7 +78,8 @@ const queryList = (s, v) => {
     return containsObject(i, s) && containsObject(i, v);
   });
   if (list.length == 0) {
-    return `${s}に${v}を含む飲食店はありません`;
+    //return `${s}に${v}を含む飲食店はありません`;
+    return null;
   } else if (list.length == 1) {
     const d = list[0];
     return `${d.施設市町村}${d.施設住所１}に「${d.施設屋号}」があります`;
